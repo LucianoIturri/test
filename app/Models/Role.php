@@ -8,6 +8,6 @@ class Role extends Model
 {
     public static function roles()
     {
-        return Role::all();
+        return Role::orderBy('id','DESC')->get();
     }
 }
